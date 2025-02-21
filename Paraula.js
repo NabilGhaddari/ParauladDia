@@ -1,3 +1,4 @@
+let intentosRestantes = 5;
 let paraulaadivinar = 'Rapid';
 paraulaadivinar = paraulaadivinar.toUpperCase();
 //Posa la paraula en majuscules
@@ -6,6 +7,18 @@ function comprovarParaula() {
     let paraulai = document.getElementById("paraulaInput").value;
     paraulai = paraulai.toUpperCase();
 //Posa la paraula introduida en majuscules
+    if (paraulaadivinar == paraulai ){
+        document.getElementById('paraula').hidden = false;
+        // Si son iguals les paraules has guanyat
+        return; // Aixo fa q no funcioni les altres funcionc si es compleix aquesta
+    }
+    if (intentosRestantes > 1) {
+        intentosRestantes--;
+        document.getElementById("intents").innerText = 'Intentos restantes: ' + intentosRestantes;
+    }else {
+        alert(`Se han agotado los intentos. La palabra era: ${paraulaadivinar}`);
+        return;
+    }
 
     if (paraulaadivinar.length == paraulai.length) {
         // Comprova si la paraula té la mateixa longitud
@@ -27,8 +40,5 @@ function comprovarParaula() {
         }
     } else {
         alert('Error: La paraula ha de tenir 5 lletres.');
-    } if (paraulaadivinar == paraulai ){
-        document.getElementById('paraula').hidden = false;
-        // Si son iguals les paraules has guanyat
     }
 }
