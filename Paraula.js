@@ -13,7 +13,7 @@ function comprovarParaula() {
         for (let posiciódelaparaula = 0; posiciódelaparaula < paraulai.length; posiciódelaparaula++) {
             //Aumenta les posicions
             if (paraulai.charAt(posiciódelaparaula) == paraulaadivinar.charAt(posiciódelaparaula)) {
-                alert('verd');
+                alert('verd')
                 // Es coloreja de color verd
             }
             else if (paraulaadivinar.includes(paraulai.charAt(posiciódelaparaula))) {
@@ -27,5 +27,8 @@ function comprovarParaula() {
         }
     } else {
         alert('Error: La paraula ha de tenir 5 lletres.');
+    } if (paraulaadivinar == paraulai ){
+        document.getElementById('paraula').hidden = false;
+        // Si son iguals les paraules has guanyat
     }
 }
