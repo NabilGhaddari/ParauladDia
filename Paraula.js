@@ -12,7 +12,7 @@ function comprovarParaula() {
         // Si son iguals les paraules has guanyat
         return; // Aixo fa q no funcioni les altres funcions si es compleix aquesta
     }
-        if (intentsRestants > 1) {
+        if (intentsRestants > 0) {
             intentsRestants--;
         } else {
             alert(`S'han acabat els intents. La paraula era: ${paraulaadivinar}`);
