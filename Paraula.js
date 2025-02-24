@@ -22,7 +22,6 @@ function comprovarParaula() {
         if (paraulaadivinar.length == paraulai.length) {
             // Comprova si la paraula té la mateixa longitud
             let resultat = '';
-
             for (let posiciódelaparaula = 0; posiciódelaparaula < paraulai.length; posiciódelaparaula++) {
                 //Aumenta les posicions
                 if (paraulai.charAt(posiciódelaparaula) == paraulaadivinar.charAt(posiciódelaparaula)) {
@@ -39,7 +38,6 @@ function comprovarParaula() {
                 }
             }
             document.getElementById('resultat').innerHTML = resultat; // Mostra el resultat
-
         } else {
             alert('Error: La paraula ha de tenir 5 lletres.');
         }
