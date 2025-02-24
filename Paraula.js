@@ -31,7 +31,7 @@ function comprovarParaula() {
                 } else if (paraulaadivinar.includes(paraulai.charAt(posiciódelaparaula))) {
                     resultat += `<span class="taronja">${paraulai.charAt(posiciódelaparaula)}</span>`;
                     // Cada vegada que hi hagi una lletra de color taronja la pinta y el resultat+= fa que si n'hi ha més d'una lletra taronja la pinti també
-                    //span = només fa allò en concret que li hem posat
+                    //span = un element de linea
                     // Es coloreja de color taronja
                 } else {
                     resultat += `<span class="blanc">${paraulai.charAt(posiciódelaparaula)}</span>`;
