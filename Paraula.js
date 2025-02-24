@@ -8,7 +8,7 @@ function comprovarParaula() {
     paraulai = paraulai.toUpperCase();
     //Posa la paraula introduida en majuscules
     if (paraulaadivinar == paraulai) {
-        document.getElementById('paraula').hidden = false;
+        alert('¡Has guanyat!')
         // Si son iguals les paraules has guanyat
         return; // Aixo fa q no funcioni les altres funcions si es compleix aquesta
     }
